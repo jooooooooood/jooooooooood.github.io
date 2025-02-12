@@ -3,64 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Portfolio</title>
+    <title>Jude McLaren - Tech & Music Professional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Professional Portfolio</h1>
+    <header class="glass-header">
         <nav>
-            <ul>
+            <div class="logo">JM</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#resume">Résumé</a></li>
                 <li><a href="#cover-letter">Cover Letter</a></li>
-                <li><a href="#documents">Professional Documents</a></li>
+                <li><a href="#documents">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>About Me</h2>
-        <img src="jude_img.JPG" alt="Your Name" style="width:150px;height:150px;">
-        <p>Jude McLaren is a tech-savvy professional with a strong background in software engineering and a deep passion for the music industry. With experience in data automation, live event coordination, and DIY show booking, he seamlessly blends technical expertise with industry insight. Jude has worked on streamlining financial reconciliation at an Ag-Tech startup and managing live audio systems at a student radio station. His ability to navigate both creative and technical spaces makes him a versatile asset in production, operations, and technology-driven roles. Jude is now seeking opportunities in Chicago where he can apply his skills to the music and entertainment industries.</p>
-    </section>
-
-    <section id="resume">
-        <h2>Résumé</h2>
-        <p>Details about your professional experience, education, skills, etc.</p>
-        <!-- You can also embed a PDF or link to a PDF of your résumé -->
-        <a href="JMcLaren Resume.pdf" target="_blank">Download My Résumé</a>
-    </section>
-
-    <section id="cover-letter">
-        <h2>Cover Letter</h2>
-        <p>Your tailored cover letter for a specific job application.</p>
-        <!-- Alternatively, link to a separate document -->
-        <a href="Dear Hiring Manager at Company,.txt" target="_blank">View My Cover Letter</a>
-    </section>
-
-    <section id="documents">
-        <h2>Professional Documents</h2>
-        <div>
-            <h3>AI Music Gen</h3>
-            <img src="music not.png" alt="Musical Note" style="width:150px;height:150px;">
-
-            <p>Here is a GitHub repo of a project in which I used Meta's MusicGen AI along with ChatGPT to create a prompt-based music generation tool.</p>
-            <!-- Musical Note Image -->
-            <a href="https://github.com/jooooooooood/MusicGeneration" target="_blank">AI Music Gen</a>
-        </div>
-        <div>
-            <h3>JoodFM</h3>
-            <img src="spoify logo.png" alt="Spotify Logo" style="width:150px;height:150px;">
-
-            <p>Here is a GitHub repo of a project in which I generated daily Spotify playlists for myself based on my recent listening history using Python and Linear Algebra.</p>
-            <!-- Spotify Logo Image -->
-            <a href="https://github.com/jooooooooood/JudeFM" target="_blank">JoodFM</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="jude_img.JPG" alt="Jude McLaren" class="profile-img">
+            <h1 class="animate-slide">Jude McLaren</h1>
+            <p class="tagline">Bridging Technology & Music</p>
+            <div class="social-links">
+                <a href="https://github.com/jooooooooood" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:mclaren.jude@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>Contact Me: <a href="mailto:mclaren.jude@gmail.com">mclaren.jude@gmail.com</a></p>
+    <section id="resume" class="section fade-in">
+        <h2>Professional Profile</h2>
+        <div class="resume-container">
+            <div class="resume-card">
+                <h3>Experience & Skills</h3>
+                <ul class="skill-list">
+                    <li>Python Development</li>
+                    <li>Data Automation</li>
+                    <li>Audio Engineering</li>
+                    <li>Project Management</li>
+                </ul>
+                <a href="JMcLaren Resume.pdf" target="_blank" class="cta-button">Download Résumé</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cover-letter" class="section fade-in">
+        <h2>Career Vision</h2>
+        <div class="letter-container">
+            <p class="vision-text">
+                Seeking to leverage technical expertise in software development with a passion for music innovation...
+            </p>
+            <a href="Dear Hiring Manager at Company,.txt" target="_blank" class="cta-button">View Cover Letter</a>
+        </div>
+    </section>
+
+    <section id="documents" class="section fade-in">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="music not.png" alt="Music AI" class="project-img">
+                <h3>AI Music Generation</h3>
+                <p>Meta's MusicGen AI integrated with ChatGPT for prompt-based composition</p>
+                <a href="https://github.com/jooooooooood/MusicGeneration" target="_blank" class="project-link">View on GitHub →</a>
+            </div>
+            <div class="project-card">
+                <img src="spoify logo.png" alt="Spotify Project" class="project-img">
+                <h3>JoodFM Playlists</h3>
+                <p>Algorithmic playlist generation using Python & linear algebra</p>
+                <a href="https://github.com/jooooooooood/JudeFM" target="_blank" class="project-link">View on GitHub →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Connect with me: <a href="mailto:mclaren.jude@gmail.com">mclaren.jude@gmail.com</a></p>
+        <p class="copyright">&copy; <span id="year"></span> Jude McLaren. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

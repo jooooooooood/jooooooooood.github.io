@@ -1,73 +1,137 @@
+:root {
+    --primary: #2A2A2A;
+    --accent: #FF4D4D;
+    --background: #F5F5F5;
+    --text: #333;
+    --glass: rgba(255, 255, 255, 0.9);
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', system-ui, sans-serif;
     line-height: 1.6;
+    color: var(--text);
+    background: var(--background);
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
+.glass-header {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
     list-style: none;
-    padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
+.nav-links a {
+    color: var(--text);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Center all headings */
-h1, h2, h3 {
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
-/* Center and resize the image */
-#home img {
-    display: block;
-    margin: 0 auto; /* Centers the image */
-    width: 250px; /* Increase the width */
-    height: 250px; /* Increase the height */
-    border-radius: 50%; /* Optional: Makes the image circular */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: 4px solid var(--accent);
+    transition: transform 0.3s ease;
 }
 
-/* Center the text in the footer */
-footer {
-    text-align: center;
+.profile-img:hover {
+    transform: scale(1.05);
 }
 
-/* Optional: Add some spacing and styling to sections */
-section {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px; /* Limit the width for better readability */
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+.section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Style links */
-a {
-    color: #0073e6;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--glass);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 2rem;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
 }
 
-#documents img {
-    display: block;
-    margin: 0 auto; /* Centers the image horizontally */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--primary);
+    color: white;
 }
