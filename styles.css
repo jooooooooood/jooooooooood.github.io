@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Center all headings */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Center and resize the image */
+#home img {
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    width: 250px; /* Increase the width */
+    height: 250px; /* Increase the height */
+    border-radius: 50%; /* Optional: Makes the image circular */
+}
+
+/* Center the text in the footer */
+footer {
+    text-align: center;
+}
+
+/* Optional: Add some spacing and styling to sections */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px; /* Limit the width for better readability */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style links */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#documents img {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}

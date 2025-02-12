@@ -1,0 +1,10 @@
+Dear Hiring Manager at Company,
+I am excited to apply for a software engineering position at Company. As a soon-to-be graduate of Georgia Tech with a strong background in software development and financial technology, I am eager to bring my experience in building scalable solutions, API integrations, and automation to your team.
+During my time at Good Agriculture, an ag-finance startup, I contributed to the development of financial software from the ground up. I built and integrated automation tools that streamlined accounting reconciliation, increasing efficiency and improving client service. Additionally, I identified and leveraged new API capabilities to enhance system functionality, expanding our software’s impact for a larger customer base. My hands-on experience with Python, Java, SQL, Flask, and REST APIs, combined with my ability to work in Agile environments, has prepared me to take on the dynamic challenges of fintech development at Company.
+Prelim’s mission to modernize financial services through technology resonates with me. I thrive in startup environments where innovation, collaboration, and problem-solving drive meaningful improvements for users. My experience developing intuitive, scalable financial applications aligns well with your company’s focus on streamlining banking and lending experiences.
+I would love the opportunity to discuss how my background and skills can contribute to Company’s success. Thank you for your time and consideration—I look forward to connecting soon.
+Best regards,
+Jude McLaren
+mclaren.jude@gmail.com
+770-715-8401
+GitHub: jooooooooood
